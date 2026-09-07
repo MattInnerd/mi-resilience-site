@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,342 +9,86 @@
 <style>
 
 :root{
---navy:#0f172a;
---blue:#2563eb;
---light:#f8fafc;
---text:#334155;
---white:#ffffff;
+    --navy:#0F172A;
+    --blue:#2563EB;
+    --light:#F8FAFC;
+    --text:#334155;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:'Segoe UI',sans-serif;
-background:var(--light);
-color:var(--text);
-line-height:1.7;
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.8;
 }
 
 .hero{
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-color:white;
-padding:80px 20px;
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+    color:white;
+    padding:70px 20px;
 }
 
 .hero-container{
-max-width:1200px;
-margin:auto;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:60px;
-flex-wrap:wrap;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
 }
 
-.profile{
-flex:1;
-min-width:320px;
+.hero-left{
+    flex:1;
+    min-width:320px;
+}
+
+.hero-right{
+    flex:0 0 auto;
 }
 
 .logo{
-width:180px;
-margin-bottom:25px;
+    width:220px;
+    margin-bottom:30px;
 }
 
-.hero h1{
-font-size:3rem;
-margin-bottom:10px;
+.headshot{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid rgba(255,255,255,0.2);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
 }
 
-.hero h2{
-font-size:1.2rem;
-font-weight:400;
-color:#cbd5e1;
-margin-bottom:25px;
+h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    font-size:1.2rem;
+    margin-bottom:25px;
 }
 
 .hero p{
-font-size:1.1rem;
-max-width:700px;
+    max-width:700px;
+    font-size:1.1rem;
 }
 
 .buttons{
-margin-top:35px;
+    margin-top:35px;
 }
 
 .btn{
-display:inline-block;
-padding:14px 28px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-margin-right:15px;
-}
-
-.btn-primary{
-background:white;
-color:var(--navy);
-}
-
-.btn-primary:hover{
-background:#e2e8f0;
-}
-
-.btn-secondary{
-border:2px solid white;
-color:white;
-}
-
-.btn-secondary:hover{
-background:white;
-color:var(--navy);
-}
-
-.headshot{
-width:300px;
-height:300px;
-object-fit:cover;
-border-radius:50%;
-border:6px solid rgba(255,255,255,0.2);
-box-shadow:0 10px 30px rgba(0,0,0,0.25);
-}
-
-.section{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
-}
-
-.section-title{
-font-size:2rem;
-margin-bottom:25px;
-color:var(--navy);
-}
-
-.about{
-font-size:1.1rem;
-max-width:900px;
-}
-
-.expertise{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-margin-top:40px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.card h3{
-color:var(--blue);
-margin-bottom:12px;
-}
-
-.contact{
-text-align:center;
-background:white;
-}
-
-.contact-email{
-font-size:1.4rem;
-font-weight:700;
-color:var(--blue);
-margin-top:15px;
-}
-
-footer{
-background:var(--navy);
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-footer p{
-max-width:800px;
-margin:auto;
-color:#cbd5e1;
-}
-
-@media(max-width:768px){
-
-.hero{
-text-align:center;
-}
-
-.hero-container{
-justify-content:center;
-}
-
-.hero h1{
-font-size:2.2rem;
-}
-
-.headshot{
-width:220px;
-height:220px;
-}
-
-.logo{
-width:140px;
-margin:auto auto 20px auto;
-display:block;
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<section class="hero">
-
-<div class="hero-container">
-
-<div class="profile">
-
-logo.png
-
-<h1>Matt Innerd</h1>
-
-<h2>
-Operational Resilience • Third‑Party Risk • Business Continuity & Crisis Management
-</h2>
-
-<p>
-Helping organisations understand, manage and strengthen critical
-dependencies across suppliers, technology, operations and services.
-
-Supporting sustainable business outcomes through operational resilience,
-third‑party assurance, continuity planning and crisis preparedness.
-</p>
-
-<div class="buttons">
-
-<a class="btn btn-primary"
-href="mailto:matt@mi-resilience.co.uk">
-Email
-</a>
-
-<a class="btn btn-secondary"
-href="https://www.linkedin.com/in/mattinnerd/"
-target="_blank">
-LinkedIn
-</a>
-
-</div>
-
-</divlass="headshot">
-
-</div>
-
-</div>
-
-</sectionn-title">
-About
-</h2>
-
-<div class="about">
-
-<p>
-I am an experienced resilience and risk professional specialising in operational resilience, third‑party risk management, business continuity and crisis management.
-</p>
-
-<br>
-
-<p>
-My focus is helping organisations understand the dependencies that underpin important business services, developing proportionate assurance approaches, and strengthening resilience against disruption across increasingly complex operating environments.
-</p>
-
-<br>
-
-<p>
-Experience spans supplier resilience, cyber resilience, risk governance, enterprise dependency management, continuity planning, crisis response and regulatory resilience frameworks.
-</p>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">
-Areas of Expertise
-</h2>
-
-<div class="expertise">
-
-<div class="card">
-<h3>Operational Resilience</h3>
-<p>Protecting important business services and maintaining critical business outcomes during disruption.</p>
-</div>
-
-<div class="card">
-<h3>Third‑Party Risk</h3>
-<p>Improving supplier assurance, dependency visibility and resilience oversight.</p>
-</div>
-
-<div class="card">
-<h3>Business Continuity</h3>
-<p>Developing practical response and recovery capabilities.</p>
-</div>
-
-<div class="card">
-<h3>Crisis Management</h3>
-<p>Strengthening organisational preparedness, readiness and response.</p>
-</div>
-
-<div class="card">
-<h3>Cyber Resilience</h3>
-<p>Supporting resilience against cyber disruption and evolving threats.</p>
-</div>
-
-<div class="card">
-<h3>Risk Governance</h3>
-<p>Embedding proportionate assurance and evidence‑based oversight.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section contact">
-
-<h2 class="section-title">
-Contact
-</h2>
-
-<p>
-For professional networking, speaking engagements and resilience-related discussions:
-</p>
-
-<div class="contact-email">
-matt@mi-resilience.co.uk
-</div>
-
-</section>
-
-<footer>
-
-<h3>MI Resilience Ltd</h3>
-
-<br>
-
-<p>
-Resilience is not about preventing disruption. It is about understanding dependencies and maintaining outcomes when disruption occurs.
-</p>
-
-</footer>
-
-</body>
-</html>
+    display:inline-block;
+    padding:14px 24px;
+    border-radius:8px;
+    text-decoration:none
