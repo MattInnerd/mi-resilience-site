@@ -9,11 +9,10 @@
 <style>
 
 :root{
-    --navy:#0F172A;
-    --blue:#2563EB;
-    --light:#F8FAFC;
+    --navy:#0f172a;
+    --blue:#2563eb;
+    --light:#f8fafc;
     --text:#334155;
-    --white:#FFFFFF;
 }
 
 *{
@@ -23,16 +22,16 @@
 }
 
 body{
-    font-family:'Segoe UI',Arial,sans-serif;
+    font-family:Segoe UI, Arial, sans-serif;
     background:#f8fafc;
     color:var(--text);
-    line-height:1.75;
+    line-height:1.8;
 }
 
 .hero{
     background:linear-gradient(135deg,#0f172a,#1e3a8a);
     color:white;
-    padding:80px 20px;
+    padding:70px 20px;
 }
 
 .container{
@@ -42,7 +41,7 @@ body{
 
 .hero-grid{
     display:grid;
-    grid-template-columns:1.8fr 1fr;
+    grid-template-columns:2fr 1fr;
     gap:60px;
     align-items:center;
 }
@@ -62,19 +61,20 @@ body{
 }
 
 h1{
-    font-size:3.5rem;
+    font-size:3.8rem;
     margin-bottom:10px;
+    font-weight:700;
 }
 
 .subtitle{
-    font-size:1.3rem;
+    font-size:1.4rem;
     color:#cbd5e1;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .intro{
-    font-size:1.15rem;
     max-width:700px;
+    font-size:1.15rem;
 }
 
 .buttons{
@@ -87,42 +87,38 @@ h1{
     border-radius:8px;
     text-decoration:none;
     font-weight:600;
-    margin-right:15px;
+    margin-right:12px;
 }
 
-.btn-email{
+.email-btn{
     background:white;
     color:#0f172a;
 }
 
-.btn-linkedin{
+.linkedin-btn{
     border:2px solid white;
     color:white;
 }
 
-.btn:hover{
-    opacity:0.9;
-}
-
-main{
+.about{
     background:white;
-}
-
-.content{
-    max-width:900px;
-    margin:auto;
     padding:80px 20px;
 }
 
-.content h2{
+.about-content{
+    max-width:850px;
+    margin:auto;
+}
+
+.about h2{
     font-size:2rem;
     margin-bottom:25px;
     color:#0f172a;
 }
 
-.content p{
-    font-size:1.1rem;
+.about p{
     margin-bottom:20px;
+    font-size:1.1rem;
 }
 
 footer{
@@ -141,7 +137,7 @@ footer p{
     margin:8px 0;
 }
 
-.footer-quote{
+.quote{
     margin-top:25px;
     font-style:italic;
 }
@@ -153,12 +149,9 @@ footer p{
     text-align:center;
 }
 
-.hero-right{
-    order:-1;
-}
-
 .logo{
-    width:180px;
+    margin:auto auto 25px auto;
+    display:block;
 }
 
 .headshot{
@@ -166,18 +159,16 @@ footer p{
     height:220px;
 }
 
+.hero-right{
+    order:-1;
+}
+
 h1{
     font-size:2.5rem;
 }
 
 .subtitle{
-    font-size:1.1rem;
-}
-
-.buttons{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    font-size:1.15rem;
 }
 
 }
@@ -195,7 +186,7 @@ h1{
 
 <div>
 
-<matt-innerd-headshot.jpg
+Logo.png
 
 <h1>Matt Innerd</h1>
 
@@ -204,19 +195,19 @@ Operational Resilience • Third‑Party Risk • Business Continuity & Crisis M
 </div>
 
 <p class="intro">
-Helping organisations understand, manage and strengthen critical dependencies across suppliers, technology, operations and services.
-Supporting sustainable business outcomes through resilience leadership, assurance, continuity planning and crisis preparedness.
+Experienced resilience and risk leader helping organisations strengthen resilience capabilities, manage critical dependencies and improve preparedness for disruption.
 </p>
 
 <div class="buttons">
 
-<a href="mailto:matt@mi-resilience.co.uk" class="btn btn-email">
+<a href="mailto:matt@mi-resilience.co.uk"
+class="btn email-btn">
 Email
 </a>
 
 <a href="https://linkedin.com/in/mattinnerd"
 target="_blank"
-class="btn btn-linkedin">
+class="btn linkedin-btn">
 LinkedIn
 </a>
 
@@ -226,19 +217,11 @@ LinkedIn
 
 <div class="hero-right">
 
-matt-innerd-headshot.jpg
+<img src="matt-innerd-headshot.jpg"
+alt="Matt Innerd"
+class="headshotn class="about">
 
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<main>
-
-<div class="content">
+<div class="about-content">
 
 <h2>About</h2>
 
@@ -256,7 +239,7 @@ Experience spans supplier resilience, cyber resilience, operational resilience, 
 
 </div>
 
-</main>
+</section>
 
 <footer>
 
@@ -272,8 +255,9 @@ England<br>
 CH64 2UW
 </p>
 
-<p class="footer-quote">
-"Resilience is not about preventing disruption. It is about understanding dependencies and maintaining outcomes when disruption occurs."
+<p class="quote">
+Resilience is not about preventing disruption.<br>
+It is about understanding dependencies and maintaining outcomes when disruption occurs.
 </p>
 
 </footer>
