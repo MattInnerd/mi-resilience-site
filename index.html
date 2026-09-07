@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Matt Innerd | Operational Resilience • Third‑Party Risk • Business Continuity & Crisis Management</title>
+
+<meta name="description" content="Matt Innerd - Operational Resilience, Enterprise Dependency Resilience, Third Party Risk Management and Cyber Resilience.">
+
+<style>
+
+:root{
+    --navy:#0F172A;
+    --blue:#2563EB;
+    --light:#F8FAFC;
+    --dark:#1E293B;
+    --white:#FFFFFF;
+    --grey:#64748B;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    color:white;
+    font-weight:700;
+    font-size:1.1rem;
+    letter-spacing:1px;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:0.95rem;
+}
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0F172A,#1E3A8A);
+    color:white;
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero .subtitle{
+    font-size:1.5rem;
+    color:#CBD5E1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    font-size:1.15rem;
+    color:#E2E8F0;
+}
+
+.hero-buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:var(--blue);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#1D4ED8;
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:var(--navy);
+}
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.4rem;
+    margin-bottom:60px;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.expertise-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:var(--blue);
+    margin-bottom:15px;
+}
+
+.highlight{
+    background:white;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.stat{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:35px;
+    border-radius:16px;
+}
+
+.stat-number{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.email{
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--blue);
+    margin:20px 0;
+}
+
+footer{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer p{
+    color:#CBD5E1;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero .subtitle{
+    font-size:1.2rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav-container">
+<div class="logo">MI RESILIENCE</div>
+
+<div class="nav-links">
+#aboutAbout</a>
+#expertiseExpertise</a>
+#contactContact</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+
+<div class="container hero-content">
+
+<h1>Matt Innerd</h1>
+
+<div class="subtitle">
+Enterprise Dependency Resilience
+</div>
+
+<p>
+Helping organisations identify, assess and strengthen critical business
+dependencies across suppliers, technology, operations and services.
+Combining operational resilience, cyber resilience and third party risk
+management to support sustainable business outcomes.
+</p>
+
+<div class="hero-buttons">
+
+<a href="mailto:matt@mi-resilience.co.uk" class="btn btn-primary">
+Contact
+</a>
+
+https://www.linkedin.com/mattinnerd
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">About</h2>
+
+<div class="about">
+
+<p>
+I am an experienced resilience and risk professional specialising in
+operational resilience, cyber resilience and third party risk management.
+My focus is helping organisations understand the dependencies that underpin
+important business services and developing practical strategies to manage
+and strengthen resilience across increasingly complex operating environments.
+</p>
+
+<br>
+
+<p>
+My experience includes enterprise resilience, supplier risk oversight,
+critical dependency management, regulatory compliance, cyber resilience
+and risk governance across global organisations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="expertise" class="highlight">
+
+<div class="container">
+
+<h2 class="section-title">Areas of Expertise</h2>
+
+<div class="expertise-grid">
+
+<div class="card">
+<h3>Operational Resilience</h3>
+<p>
+Supporting organisations in understanding, protecting and sustaining important business services during disruption.
+</p>
+</div>
+
+<div class="card">
+<h3>Enterprise Dependency Resilience</h3>
+<p>
+Mapping and managing critical dependencies across people, suppliers, technology and operations.
+</p>
+</div>
+
+<div class="card">
+<h3>Third Party Risk Management</h3>
+<p>
+Designing proportionate supplier assurance and risk oversight approaches
