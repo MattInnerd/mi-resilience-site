@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Matt Innerd | MI Resilience</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Matt Innerd MSc MBCI | Enterprise Dependency Resilience
+</title>
+
+<meta name="description"
+content="Matt Innerd MSc MBCI | Operational Resilience, Third Party Resilience, Cyber Resilience and Enterprise Dependency Resilience">
 
 <style>
 
 :root{
     --navy:#0F172A;
+    --navy-light:#1E293B;
     --blue:#2563EB;
+    --blue-light:#93C5FD;
     --light:#F8FAFC;
-    --text:#334155;
+    --dark:#1E293B;
+    --white:#FFFFFF;
 }
 
 *{
@@ -21,74 +30,477 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:"Segoe UI",Arial,sans-serif;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     background:var(--light);
-    color:var(--text);
-    line-height:1.8;
+    color:var(--dark);
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-weight:700;
+    color:white;
+    font-size:1rem;
+    letter-spacing:1px;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:0.95rem;
 }
 
 .hero{
+    min-height:100vh;
     background:linear-gradient(135deg,#0F172A,#1E3A8A);
-    color:white;
-    padding:70px 20px;
-}
-
-.hero-container{
-    max-width:1200px;
-    margin:auto;
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    color:white;
+}
+
+.hero-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
     gap:60px;
     flex-wrap:wrap;
 }
 
-.hero-left{
-    flex:1;
-    min-width:320px;
-}
-
-.hero-right{
-    flex:0 0 auto;
-}
-
-.logo{
-    width:220px;
-    margin-bottom:30px;
-}
-
-.headshot{
-    width:300px;
-    height:300px;
-    border-radius:50%;
+.hero-image img{
+    width:320px;
+    height:320px;
     object-fit:cover;
-    border:6px solid rgba(255,255,255,0.2);
-    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    border-radius:50%;
+    border:6px solid white;
+    box-shadow:0 25px 50px rgba(0,0,0,0.3);
 }
 
-h1{
-    font-size:3rem;
+.hero-content{
+    max-width:650px;
+}
+
+.tagline{
+    color:var(--blue-light);
+    font-weight:600;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    font-size:0.9rem;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    line-height:1.1;
     margin-bottom:10px;
 }
 
-.subtitle{
-    color:#cbd5e1;
-    font-size:1.2rem;
+.hero h2{
+    font-size:1.6rem;
+    color:#dbeafe;
     margin-bottom:25px;
+    font-weight:400;
 }
 
 .hero p{
-    max-width:700px;
+    color:#e2e8f0;
     font-size:1.1rem;
 }
 
-.buttons{
+.hero-buttons{
     margin-top:35px;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 24px;
+    padding:14px 28px;
     border-radius:8px;
-    text-decoration:none
+    text-decoration:none;
+    font-weight:600;
+    margin-right:15px;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:var(--blue);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#1D4ED8;
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:var(--navy);
+}
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.3rem;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:1.05rem;
+}
+
+.experience-card{
+    background:white;
+    border-radius:16px;
+    padding:40px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+.experience-card h3{
+    color:var(--navy);
+    margin-bottom:10px;
+}
+
+.company{
+    color:var(--blue);
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.experience-card ul{
+    padding-left:20px;
+    margin-top:20px;
+}
+
+.experience-card li{
+    margin-bottom:10px;
+}
+
+.expertise-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:var(--blue);
+    margin-bottom:15px;
+}
+
+.sector-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.sector{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.contact-box{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.email{
+    font-size:1.4rem;
+    font-weight:700;
+    color:var(--blue);
+    margin:20px 0;
+}
+
+footer{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer p{
+    color:#d1d5db;
+}
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+    padding-top:100px;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero-image img{
+    width:240px;
+    height:240px;
+}
+
+.nav-links{
+    display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="container nav-container">
+
+<div class="logo">
+MI RESILIENCE
+</div>
+
+<div class="nav-links">
+<aboutAbout</a>
+<a hrefenceCurrent Role</a>
+<a href="#expertise">ExpertntactContact</a>
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="container hero-wrapper">
+
+<div class="hero-image">
+<img src="matt-innerd-headshot.jpgdiv class="hero-content">
+
+<div class="tagline">
+OPERATIONAL RESILIENCE • CYBER RESILIENCE • CRITICAL DEPENDENCIES
+</div>
+
+<h1>
+Matt Innerd MSc MBCI
+</h1>
+
+<h2>
+Enterprise Dependency Resilience
+</h2>
+
+<p>
+Experienced resilience professional specialising in operational resilience,
+third-party resilience, cyber resilience and critical dependency management.
+Helping organisations understand, assess and strengthen the dependencies
+that underpin critical business outcomes.
+</p>
+
+<div class="hero-buttons">
+
+<a href="mailto:matt@mi-resilience.co.uk"
+class="btn btn-primary">
+Contact
+</a>
+
+<a href="https://linkedin.com/in/mattinnerd"
+target="_blank"
+class="btn btn-secondary">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About
+</h2>
+
+<div class="about">
+
+<p>
+Matt Innerd is an experienced resilience professional with a background spanning
+consumer goods, healthcare, government, aviation, financial services and critical
+infrastructure.
+</p>
+
+<br>
+
+<p>
+His work focuses on operational resilience, third-party resilience,
+enterprise dependency resilience, crisis management and cyber resilience,
+helping organisations understand how critical services depend on suppliers,
+technology, people and operations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<div class="container">
+
+<h2 class="section-title">
+Current Focus
+</h2>
+
+<div class="experience-card">
+
+<h3>
+Third Party Resilience Manager
+</h3>
+
+<p class="company">
+Unilever | January 2026 – Present
+</p>
+
+<p>
+
+Global role focused on strengthening resilience across critical third-party
+relationships and enterprise dependencies through governance, assurance,
+testing and recovery capability.
+
+</p>
+
+<ul>
+
+<li>
+Developing global third-party resilience strategy, governance and standards.
+</li>
+
+<li>
+Embedding resilience requirements across supplier lifecycles.
+</li>
+
+<li>
+Supporting NIS2 supplier assurance programmes.
+</li>
+
+<li>
+Driving evidence-based resilience assurance and recovery validation.
+</li>
+
+<li>
+Connecting supplier resilience, cyber resilience and operational resilience.
+</li>
+
+<li>
+Enhancing visibility of critical external dependencies supporting
+business outcomes.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="expertise">
+
+<div class="container">
+
+<h2 class="section-title">
+Areas of Expertise
+</h2>
+
+<div class="expertise-grid">
+
+<div class="card">
+<h3>Enterprise Dependency Resilience</h3>
+<p>
+Understanding and managing critical dependencies across suppliers,
+technology, services and operations.
+</p>
+</div>
+
+<div class="card">
+<h3>Third Party Resilience</h3>
+<p>
+Strengthening resilience across supplier relationships and external
+service ecosystems.
+</p>
+</div>
+
+<div class="card">
+<h3>Operational Resilience</h3>
+<p>
+Protecting critical business services and supporting recovery within
+agreed tolerances.
+</p>
+</div>
+
+<div class="card">
+<h3>Cyber Resilience</h3>
+<p>
+Improving organisational preparedness, response and recovery capability.
+</p>
+</div>
+
+<div class="card">
+<h3>Crisis Management</h3>
+<p>
+Building confidence
