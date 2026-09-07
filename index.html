@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Matt Innerd MSc MBCI | Enterprise Dependency Resilience
-</title>
-
-<meta name="description"
-content="Matt Innerd MSc MBCI | Operational Resilience, Third Party Resilience, Cyber Resilience and Enterprise Dependency Resilience">
+<title>Matt Innerd | MI Resilience</title>
 
 <style>
 
 :root{
     --navy:#0F172A;
-    --navy-light:#1E293B;
     --blue:#2563EB;
-    --blue-light:#93C5FD;
     --light:#F8FAFC;
-    --dark:#1E293B;
+    --text:#334155;
     --white:#FFFFFF;
 }
 
@@ -30,332 +22,201 @@ content="Matt Innerd MSc MBCI | Operational Resilience, Third Party Resilience, 
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+body{
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:#f8fafc;
+    color:var(--text);
+    line-height:1.75;
 }
 
-body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-    background:var(--light);
-    color:var(--dark);
-    line-height:1.7;
+.hero{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:80px 20px;
 }
 
 .container{
-    width:90%;
     max-width:1200px;
     margin:auto;
 }
 
-nav{
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:1000;
-    background:rgba(15,23,42,0.95);
-    backdrop-filter:blur(10px);
-}
-
-.nav-container{
-    display:flex;
-    justify-content:space-between;
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.8fr 1fr;
+    gap:60px;
     align-items:center;
-    padding:18px 0;
 }
 
 .logo{
-    font-weight:700;
-    color:white;
-    font-size:1rem;
-    letter-spacing:1px;
+    width:220px;
+    margin-bottom:30px;
 }
 
-.nav-links{
-    display:flex;
-    gap:25px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    font-size:0.95rem;
-}
-
-.hero{
-    min-height:100vh;
-    background:linear-gradient(135deg,#0F172A,#1E3A8A);
-    display:flex;
-    align-items:center;
-    color:white;
-}
-
-.hero-wrapper{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:60px;
-    flex-wrap:wrap;
-}
-
-.hero-image img{
+.headshot{
     width:320px;
     height:320px;
     object-fit:cover;
     border-radius:50%;
-    border:6px solid white;
-    box-shadow:0 25px 50px rgba(0,0,0,0.3);
+    border:6px solid rgba(255,255,255,0.15);
+    box-shadow:0 20px 40px rgba(0,0,0,0.3);
 }
 
-.hero-content{
-    max-width:650px;
-}
-
-.tagline{
-    color:var(--blue-light);
-    font-weight:600;
-    letter-spacing:2px;
-    margin-bottom:20px;
-    font-size:0.9rem;
-}
-
-.hero h1{
+h1{
     font-size:3.5rem;
-    line-height:1.1;
     margin-bottom:10px;
 }
 
-.hero h2{
-    font-size:1.6rem;
-    color:#dbeafe;
-    margin-bottom:25px;
-    font-weight:400;
+.subtitle{
+    font-size:1.3rem;
+    color:#cbd5e1;
+    margin-bottom:30px;
 }
 
-.hero p{
-    color:#e2e8f0;
-    font-size:1.1rem;
+.intro{
+    font-size:1.15rem;
+    max-width:700px;
 }
 
-.hero-buttons{
+.buttons{
     margin-top:35px;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 28px;
+    padding:14px 24px;
     border-radius:8px;
     text-decoration:none;
     font-weight:600;
     margin-right:15px;
-    transition:0.3s;
 }
 
-.btn-primary{
-    background:var(--blue);
-    color:white;
+.btn-email{
+    background:white;
+    color:#0f172a;
 }
 
-.btn-primary:hover{
-    background:#1D4ED8;
-}
-
-.btn-secondary{
+.btn-linkedin{
     border:2px solid white;
     color:white;
 }
 
-.btn-secondary:hover{
+.btn:hover{
+    opacity:0.9;
+}
+
+main{
     background:white;
-    color:var(--navy);
 }
 
-section{
-    padding:90px 0;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-    font-size:2.3rem;
-}
-
-.about{
+.content{
     max-width:900px;
     margin:auto;
-    text-align:center;
-    font-size:1.05rem;
+    padding:80px 20px;
 }
 
-.experience-card{
-    background:white;
-    border-radius:16px;
-    padding:40px;
-    box-shadow:0 15px 30px rgba(0,0,0,0.08);
+.content h2{
+    font-size:2rem;
+    margin-bottom:25px;
+    color:#0f172a;
 }
 
-.experience-card h3{
-    color:var(--navy);
-    margin-bottom:10px;
-}
-
-.company{
-    color:var(--blue);
-    font-weight:600;
+.content p{
+    font-size:1.1rem;
     margin-bottom:20px;
 }
 
-.experience-card ul{
-    padding-left:20px;
-    margin-top:20px;
-}
-
-.experience-card li{
-    margin-bottom:10px;
-}
-
-.expertise-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    border-radius:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.card h3{
-    color:var(--blue);
-    margin-bottom:15px;
-}
-
-.sector-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:20px;
-}
-
-.sector{
-    background:var(--navy);
-    color:white;
-    text-align:center;
-    padding:25px;
-    border-radius:12px;
-    font-weight:600;
-}
-
-.contact-box{
-    background:white;
-    max-width:700px;
-    margin:auto;
-    padding:40px;
-    border-radius:16px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.email{
-    font-size:1.4rem;
-    font-weight:700;
-    color:var(--blue);
-    margin:20px 0;
-}
-
 footer{
-    background:var(--navy);
+    background:#0f172a;
     color:white;
     text-align:center;
     padding:50px 20px;
 }
 
+footer h3{
+    margin-bottom:15px;
+}
+
 footer p{
-    color:#d1d5db;
+    color:#cbd5e1;
+    margin:8px 0;
 }
 
-@media(max-width:768px){
+.footer-quote{
+    margin-top:25px;
+    font-style:italic;
+}
 
-.hero{
+@media(max-width:900px){
+
+.hero-grid{
+    grid-template-columns:1fr;
     text-align:center;
-    padding-top:100px;
 }
 
-.hero h1{
+.hero-right{
+    order:-1;
+}
+
+.logo{
+    width:180px;
+}
+
+.headshot{
+    width:220px;
+    height:220px;
+}
+
+h1{
     font-size:2.5rem;
 }
 
-.hero-image img{
-    width:240px;
-    height:240px;
+.subtitle{
+    font-size:1.1rem;
 }
 
-.nav-links{
-    display:none;
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
-<nav>
+<section class="hero">
 
-<div class="container nav-container">
+<div class="container">
 
-<div class="logo">
-MI RESILIENCE
+<div class="hero-grid">
+
+<div>
+
+<img.png
+
+<h1>Matt Innerd</h1>
+
+<div class="subtitle">
+Operational Resilience • Third‑Party Risk • Business Continuity & Crisis Management
 </div>
 
-<div class="nav-links">
-<aboutAbout</a>
-<a hrefenceCurrent Role</a>
-<a href="#expertise">ExpertntactContact</a>
-</div>
-
-</div>
-
-</nav>
-
-<header class="hero">
-
-<div class="container hero-wrapper">
-
-<div class="hero-image">
-<img src="matt-innerd-headshot.jpgdiv class="hero-content">
-
-<div class="tagline">
-OPERATIONAL RESILIENCE • CYBER RESILIENCE • CRITICAL DEPENDENCIES
-</div>
-
-<h1>
-Matt Innerd MSc MBCI
-</h1>
-
-<h2>
-Enterprise Dependency Resilience
-</h2>
-
-<p>
-Experienced resilience professional specialising in operational resilience,
-third-party resilience, cyber resilience and critical dependency management.
-Helping organisations understand, assess and strengthen the dependencies
-that underpin critical business outcomes.
+<p class="intro">
+Helping organisations understand, manage and strengthen critical dependencies across suppliers, technology, operations and services.
+Supporting sustainable business outcomes through resilience leadership, assurance, continuity planning and crisis preparedness.
 </p>
 
-<div class="hero-buttons">
+<div class="buttons">
 
-<a href="mailto:matt@mi-resilience.co.uk"
-class="btn btn-primary">
-Contact
+<a href="mailto:matt@mi-resilience.co.uk" class="btn btn-email">
+Email
 </a>
 
 <a href="https://linkedin.com/in/mattinnerd"
 target="_blank"
-class="btn btn-secondary">
+class="btn btn-linkedin">
 LinkedIn
 </a>
 
@@ -363,34 +224,11 @@ LinkedIn
 
 </div>
 
+<div class="hero-right">
+
+Headshot.png
+
 </div>
-
-</header>
-
-<section id="about">
-
-<div class="container">
-
-<h2 class="section-title">
-About
-</h2>
-
-<div class="about">
-
-<p>
-Matt Innerd is an experienced resilience professional with a background spanning
-consumer goods, healthcare, government, aviation, financial services and critical
-infrastructure.
-</p>
-
-<br>
-
-<p>
-His work focuses on operational resilience, third-party resilience,
-enterprise dependency resilience, crisis management and cyber resilience,
-helping organisations understand how critical services depend on suppliers,
-technology, people and operations.
-</p>
 
 </div>
 
@@ -398,109 +236,47 @@ technology, people and operations.
 
 </section>
 
-<section id="experience">
+<main>
 
-<div class="container">
+<div class="content">
 
-<h2 class="section-title">
-Current Focus
-</h2>
+<h2>About</h2>
 
-<div class="experience-card">
-
-<h3>
-Third Party Resilience Manager
-</h3>
-
-<p class="company">
-Unilever | January 2026 – Present
+<p>
+Experienced resilience and risk professional specialising in operational resilience, enterprise dependency management, third‑party risk management, business continuity and crisis management.
 </p>
 
 <p>
-
-Global role focused on strengthening resilience across critical third-party
-relationships and enterprise dependencies through governance, assurance,
-testing and recovery capability.
-
+Focused on helping organisations identify critical dependencies, strengthen resilience capabilities and improve preparedness for disruption through practical governance, assurance, testing, recovery planning and operational risk management.
 </p>
 
-<ul>
-
-<li>
-Developing global third-party resilience strategy, governance and standards.
-</li>
-
-<li>
-Embedding resilience requirements across supplier lifecycles.
-</li>
-
-<li>
-Supporting NIS2 supplier assurance programmes.
-</li>
-
-<li>
-Driving evidence-based resilience assurance and recovery validation.
-</li>
-
-<li>
-Connecting supplier resilience, cyber resilience and operational resilience.
-</li>
-
-<li>
-Enhancing visibility of critical external dependencies supporting
-business outcomes.
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="expertise">
-
-<div class="container">
-
-<h2 class="section-title">
-Areas of Expertise
-</h2>
-
-<div class="expertise-grid">
-
-<div class="card">
-<h3>Enterprise Dependency Resilience</h3>
 <p>
-Understanding and managing critical dependencies across suppliers,
-technology, services and operations.
+Experience spans supplier resilience, cyber resilience, operational resilience, continuity planning, crisis response, resilience assurance, regulatory resilience frameworks and enterprise dependency management.
 </p>
+
 </div>
 
-<div class="card">
-<h3>Third Party Resilience</h3>
+</main>
+
+<footer>
+
+<h3>MI Resilience Ltd</h3>
+
+<p>Company Number 11625187</p>
+
 <p>
-Strengthening resilience across supplier relationships and external
-service ecosystems.
+Rose Villa Hadlow Road<br>
+Willaston<br>
+Neston<br>
+England<br>
+CH64 2UW
 </p>
-</div>
 
-<div class="card">
-<h3>Operational Resilience</h3>
-<p>
-Protecting critical business services and supporting recovery within
-agreed tolerances.
+<p class="footer-quote">
+"Resilience is not about preventing disruption. It is about understanding dependencies and maintaining outcomes when disruption occurs."
 </p>
-</div>
 
-<div class="card">
-<h3>Cyber Resilience</h3>
-<p>
-Improving organisational preparedness, response and recovery capability.
-</p>
-</div>
+</footer>
 
-<div class="card">
-<h3>Crisis Management</h3>
-<p>
-Building confidence
+</body>
+</html>
