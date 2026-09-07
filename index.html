@@ -13,6 +13,7 @@
     --blue:#2563eb;
     --light:#f8fafc;
     --text:#334155;
+    --white:#ffffff;
 }
 
 *{
@@ -22,7 +23,7 @@
 }
 
 body{
-    font-family:Segoe UI, Arial, sans-serif;
+    font-family:'Segoe UI',Arial,sans-serif;
     background:var(--light);
     color:var(--text);
     line-height:1.8;
@@ -35,19 +36,26 @@ body{
 }
 
 .container{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
 }
 
 h1{
     font-size:4rem;
+    font-weight:700;
     margin-bottom:10px;
 }
 
 .subtitle{
     font-size:1.4rem;
     color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.location{
+    color:#93c5fd;
     margin-bottom:30px;
+    font-size:1rem;
 }
 
 .intro{
@@ -66,6 +74,7 @@ h1{
     text-decoration:none;
     border-radius:8px;
     font-weight:600;
+    transition:0.3s;
 }
 
 .email-btn{
@@ -73,9 +82,18 @@ h1{
     color:#0f172a;
 }
 
+.email-btn:hover{
+    background:#e5e7eb;
+}
+
 .linkedin-btn{
     border:2px solid white;
     color:white;
+}
+
+.linkedin-btn:hover{
+    background:white;
+    color:#0f172a;
 }
 
 .about{
@@ -103,7 +121,7 @@ footer{
     background:#0f172a;
     color:white;
     text-align:center;
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 footer h3{
@@ -116,29 +134,29 @@ footer p{
 }
 
 .quote{
-    margin-top:20px;
+    margin-top:25px;
     font-style:italic;
 }
 
 @media(max-width:768px){
 
-h1{
-    font-size:2.5rem;
-}
+    h1{
+        font-size:2.5rem;
+    }
 
-.subtitle{
-    font-size:1.1rem;
-}
+    .subtitle{
+        font-size:1.1rem;
+    }
 
-.intro{
-    font-size:1rem;
-}
+    .intro{
+        font-size:1rem;
+    }
 
-.btn{
-    display:block;
-    margin-bottom:12px;
-    text-align:center;
-}
+    .btn{
+        display:block;
+        margin-bottom:12px;
+        text-align:center;
+    }
 
 }
 
@@ -155,11 +173,15 @@ h1{
 <h1>Matt Innerd</h1>
 
 <div class="subtitle">
-Operational Resilience • Third‑Party Risk • Business Continuity & Crisis Management
+Operational Resilience • Third‑Party Risk • Business Continuity • Crisis Management
+</div>
+
+<div class="location">
+United Kingdom
 </div>
 
 <p class="intro">
-Experienced resilience and risk professional helping organisations strengthen resilience capabilities, manage critical dependencies and improve preparedness for disruption through practical governance, assurance and operational risk management.
+Helping organisations understand, manage and strengthen critical dependencies across suppliers, technology, operations and services. Supporting sustainable business outcomes through operational resilience, business continuity, crisis management and proportionate risk governance.
 </p>
 
 <div class="buttons">
@@ -187,15 +209,15 @@ LinkedIn
 <h2>About</h2>
 
 <p>
-Experienced resilience and risk leader specialising in operational resilience, enterprise dependency management, third‑party risk management, business continuity and crisis management.
+Matt Innerd is an experienced resilience and risk professional specialising in operational resilience, enterprise dependency management, third‑party risk management, business continuity and crisis management.
 </p>
 
 <p>
-Focused on helping organisations identify critical dependencies, strengthen resilience capabilities and improve preparedness for disruption through practical governance, assurance, testing, recovery planning and operational risk management.
+His work focuses on helping organisations understand critical dependencies, strengthen resilience capabilities and improve preparedness for disruption through governance, assurance, testing, recovery planning and operational risk management.
 </p>
 
 <p>
-Experience spans supplier resilience, cyber resilience, operational resilience, continuity planning, crisis response, resilience assurance, regulatory resilience frameworks and enterprise dependency management.
+Experience spans supplier resilience, cyber resilience, business continuity, operational resilience, crisis response, risk governance and regulatory resilience frameworks within complex global organisations.
 </p>
 
 </div>
@@ -218,7 +240,7 @@ CH64 2UW
 
 <p class="quote">
 Resilience is not about preventing disruption.<br>
-It is about understanding dependencies and maintaining outcomes when disruption occurs.
+It is about understanding dependencies and sustaining critical business outcomes when disruption occurs.
 </p>
 
 </footer>
