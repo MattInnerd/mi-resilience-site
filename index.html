@@ -1,196 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Matt Innerd | MI Resilience</title>
 
 <style>
 
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    color: #1f2937;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
     background: #f8fafc;
+    color: #1f2937;
     line-height: 1.7;
 }
 
-header {
-    background: #0f172a;
+.hero {
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
 }
 
-header h2 {
-    font-weight: normal;
+.hero h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
     color: #cbd5e1;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-header p {
-    max-width: 800px;
+.hero p {
+    max-width: 900px;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
-.button {
+.buttons {
+    margin-top: 40px;
+}
+
+.btn {
     display: inline-block;
+    padding: 14px 28px;
     margin: 10px;
-    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.primary {
     background: #2563eb;
     color: white;
-    text-decoration: none;
-    border-radius: 6px;
 }
 
-.button:hover {
+.primary:hover {
     background: #1d4ed8;
 }
 
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 20px;
+.secondary {
+    border: 2px solid white;
+    color: white;
 }
 
-h3 {
+.secondary:hover {
+    background: white;
     color: #0f172a;
-    margin-bottom: 20px;
+}
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #0f172a;
+}
+
+.about {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: auto;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+    margin-top: 40px;
 }
 
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-footer {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<h1>Matt Innerd</h1>
-
-<h2>
-Operational Resilience • Third‑Party Risk • Business Continuity & Crisis Management
-</h2>
-
-<p>
-Helping organisations understand, manage and strengthen critical
-dependencies across suppliers, technology, operations and services.
-Supporting sustainable business outcomes through resilience,
-continuity and crisis preparedness.
-</p>
-
-<a class="button" href="mailto:matt@mi-resilience.co.uk">
-Contact
-</a>
-
-<a class="button"
-href="https://www.linkedin.com/in/mattinnerd"
-target=on>
-
-<h3>About</h3>
-
-<p>
-I am an experienced resilience and risk professional specialising
-in operational resilience, third‑party risk management,
-business continuity and crisis management.
-
-My focus is helping organisations understand the dependencies
-that underpin important business services and developing
-practical approaches to strengthen resilience across increasingly
-complex operating environments.
-</p>
-
-</section>
-
-<section>
-
-<h3>What I Do</h3>
-
-<div class="cards">
-
-<div class="card">
-<h4>Operational Resilience</h4>
-<p>Protecting important business services during disruption.</p>
-</div>
-
-<div class="card">
-<h4>Third Party Risk</h4>
-<p>Improving supplier assurance and dependency oversight.</p>
-</div>
-
-<div class="card">
-<h4>Business Continuity</h4>
-<p>Preparing organisations to respond and recover effectively.</p>
-</div>
-
-<div class="card">
-<h4>Crisis Management</h4>
-<p>Supporting readiness, response and recovery activities.</p>
-</div>
-
-<div class="card">
-<h4>Enterprise Dependencies</h4>
-<p>Mapping critical relationships across suppliers, technology and operations.</p>
-</div>
-
-<div class="card">
-<h4>Risk Governance</h4>
-<p>Embedding proportionate assurance and resilience oversight.</p>
-</div>
-
-</div>
-
-</section>
-
-<section style="text-align:center">
-
-<h3>Contact</h3>
-
-<p>
-<strong>matt@mi-resilience.co.uk</strong>
-</p>
-
-</section>
-
-<footer>
-
-<p>
-MI Resilience Ltd | Company Number 11625187
-</p>
-
-<p>
-Resilience is not about preventing disruption.
-It is about understanding dependencies and maintaining outcomes when disruption occurs.
-</p>
-
-</footer>
-
-</body>
-</html>
+    padding
