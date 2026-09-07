@@ -1,111 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Matt Innerd | MI Resilience</title>
 
 <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+--navy:#0f172a;
+--blue:#2563eb;
+--light:#f8fafc;
+--text:#334155;
+--white:#ffffff;
 }
 
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f8fafc;
-    color: #1f2937;
-    line-height: 1.7;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.hero {
-    background: linear-gradient(135deg,#0f172a,#1e3a8a);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+body{
+font-family:'Segoe UI',sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.7;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 15px;
+.hero{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+padding:80px 20px;
 }
 
-.hero h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #cbd5e1;
-    margin-bottom: 30px;
+.hero-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
 }
 
-.hero p {
-    max-width: 900px;
-    margin: auto;
-    font-size: 1.15rem;
+.profile{
+flex:1;
+min-width:320px;
 }
 
-.buttons {
-    margin-top: 40px;
+.logo{
+width:180px;
+margin-bottom:25px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 14px 28px;
-    margin: 10px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: .3s;
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
 }
 
-.primary {
-    background: #2563eb;
-    color: white;
+.hero h2{
+font-size:1.2rem;
+font-weight:400;
+color:#cbd5e1;
+margin-bottom:25px;
 }
 
-.primary:hover {
-    background: #1d4ed8;
+.hero p{
+font-size:1.1rem;
+max-width:700px;
 }
 
-.secondary {
-    border: 2px solid white;
-    color: white;
+.buttons{
+margin-top:35px;
 }
 
-.secondary:hover {
-    background: white;
-    color: #0f172a;
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+margin-right:15px;
 }
 
-.section {
-    max-width: 1100px;
-    margin: auto;
-    padding: 80px 20px;
+.btn-primary{
+background:white;
+color:var(--navy);
 }
 
-.section h3 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-    text-align: center;
-    color: #0f172a;
+.btn-primary:hover{
+background:#e2e8f0;
 }
 
-.about {
-    text-align: center;
-    font-size: 1.1rem;
-    max-width: 900px;
-    margin: auto;
+.btn-secondary{
+border:2px solid white;
+color:white;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 25px;
-    margin-top: 40px;
+.btn-secondary:hover{
+background:white;
+color:var(--navy);
 }
 
-.card {
-    background: white;
-    padding
+.headshot{
+width:300px;
+height:300px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid rgba(255,255,255,0.2);
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.section{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section-title{
+font-size:2rem;
+margin-bottom:25px;
+color:var(--navy);
+}
+
+.about{
+font-size:1.1rem;
+max-width:900px;
+}
+
+.expertise{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+color:var(--blue);
+margin-bottom:12px;
+}
+
+.contact{
+text-align:center;
+background:white;
+}
+
+.contact-email{
+font-size:1.4rem;
+font-weight:700;
+color:var(--blue);
+margin-top:15px;
+}
+
+footer{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+footer p{
+max-width:800px;
+margin:auto;
+color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-container{
+justify-content:center;
+}
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.headshot{
+width:220px;
+height:220px;
+}
+
+.logo{
+width:140px;
+margin:auto auto 20px auto;
+display:block;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div class="profile">
+
+logo.png
+
+<h1>Matt Innerd</h1>
+
+<h2>
+Operational Resilience • Third‑Party Risk • Business Continuity & Crisis Management
+</h2>
+
+<p>
+Helping organisations understand, manage and strengthen critical
+dependencies across suppliers, technology, operations and services.
+
+Supporting sustainable business outcomes through operational resilience,
+third‑party assurance, continuity planning and crisis preparedness.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="mailto:matt@mi-resilience.co.uk">
+Email
+</a>
+
+<a class="btn btn-secondary"
+href="REPLACE-WITH-YOUR-LINKEDIN"
+target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+</divlass="headshot">
+
+</div>
+
+</div>
+
+</sectionn-title">
+About
+</h2>
+
+<div class="about">
+
+<p>
+I am an experienced resilience and risk professional specialising in operational resilience, third‑party risk management, business continuity and crisis management.
+</p>
+
+<br>
+
+<p>
+My focus is helping organisations understand the dependencies that underpin important business services, developing proportionate assurance approaches, and strengthening resilience against disruption across increasingly complex operating environments.
+</p>
+
+<br>
+
+<p>
+Experience spans supplier resilience, cyber resilience, risk governance, enterprise dependency management, continuity planning, crisis response and regulatory resilience frameworks.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Areas of Expertise
+</h2>
+
+<div class="expertise">
+
+<div class="card">
+<h3>Operational Resilience</h3>
+<p>Protecting important business services and maintaining critical business outcomes during disruption.</p>
+</div>
+
+<div class="card">
+<h3>Third‑Party Risk</h3>
+<p>Improving supplier assurance, dependency visibility and resilience oversight.</p>
+</div>
+
+<div class="card">
+<h3>Business Continuity</h3>
+<p>Developing practical response and recovery capabilities.</p>
+</div>
+
+<div class="card">
+<h3>Crisis Management</h3>
+<p>Strengthening organisational preparedness, readiness and response.</p>
+</div>
+
+<div class="card">
+<h3>Cyber Resilience</h3>
+<p>Supporting resilience against cyber disruption and evolving threats.</p>
+</div>
+
+<div class="card">
+<h3>Risk Governance</h3>
+<p>Embedding proportionate assurance and evidence‑based oversight.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<p>
+For professional networking, speaking engagements and resilience-related discussions:
+</p>
+
+<div class="contact-email">
+matt@mi-resilience.co.uk
+</div>
+
+</section>
+
+<footer>
+
+<h3>MI Resilience Ltd</h3>
+
+<br>
+
+<p>
+Resilience is not about preventing disruption. It is about understanding dependencies and maintaining outcomes when disruption occurs.
+</p>
+
+</footer>
+
+</body>
+</html>
